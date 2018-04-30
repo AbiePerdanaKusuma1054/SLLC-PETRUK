@@ -219,3 +219,32 @@ int main()
 			tambahtengah(dat);
 		}
 		print_node();
+	
+    cout << "\n# Hapus List Node Depan." << endl;
+    banyakangka();
+	cin >> n;
+	    for (int i = 0; i < n; i++)
+	    {
+			hapusdepan(dat);
+		}
+		print_node();
+	
+    cout << "\n# Hapus List Node Belakang." << endl;
+    banyakangka();
+	cin >> n;
+	    for (int i = 0; i < n; i++)
+	    {
+			hapusbelakang(dat);
+		}
+		print_node();
+	
+    cout << "\n# Hapus List Node tertentu." << endl;
+  	banyakangka();
+	cin >> n;
+	    for (int i = 0; i < n; i++)
+	    {
+			hapustengah(dat);
+			print_node();
+		}
+    
+}

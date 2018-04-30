@@ -44,7 +44,7 @@ void tambahbelakang(int parameter)
   cin >>   temp->angka;  
     
   temp->next = NULL; 
-									// Set up link pada node
+									
 	  if (awal_node == NULL)
 		  {
 		    awal_node = temp;

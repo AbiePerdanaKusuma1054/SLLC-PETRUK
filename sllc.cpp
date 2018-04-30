@@ -1,11 +1,10 @@
 //fauzi riski-1717051029
 //irham setyaki-1757051005
-//bonema tri prasetyo-1717051017
-//Fikri Aulia-1717051047
+//fikri aulia-1717051047
 
 #include <iostream> 
-#include <windows.h>
-
+#include <stdlib.h>
+#include <conio.h>
 using namespace std;
 
 class node 
@@ -27,7 +26,7 @@ void tambahdepan(int parameter)
   baru->next = NULL;	
   if(awal_node == NULL)	
 	  {
-	    awal_node=baru;		
+	    awal_node=baru;		//f
 	    awal_node->next = NULL;
 	  }
   else
@@ -118,100 +117,3 @@ void hapusbelakang(int parameter)
 } 
 
 void tambahtengah(int parameter)
-{
-  node *baru, *bantu;
-  int posisi_sisip;
-	  if(awal_node != NULL)
-	  {
-	    cout<<"Akan disisip setelah Data Ke ? : ";
-	    cin>>posisi_sisip;
-	    bantu=awal_node;
-	    baru =new node;
-		    for(int i=1;i<posisi_sisip;i++) 
-				{
-			    	if(bantu->next != NULL)
-			    		bantu=bantu->next;
-			    		
-			      	else
-			      		continue; 
-			    }
-		  cout << "Masukkan Angka     : ";
-		  cin >> baru->angka;
-		  baru->next=bantu->next;
-		  bantu->next=baru;
-	  }
-	  else
-	  {
-	    cout<<"Belum ada data !!";
-	    system("pause");
-	  } 
-} 
-
-void hapustengah(int parameter)
-{
-  int banyakdata,posisi_hapus,poshapus;
-  node *hapus, *bantu;
-	  if(awal_node != NULL)
-		{
-		    cout<<"Akan dihapus pada data ke : ";
-		    cin>>posisi_hapus;
-		    banyakdata=1;
-		    bantu=awal_node;
-			    while(bantu->next != NULL)
-				    {
-				      bantu=bantu->next;
-				      banyakdata++;
-				    }
-		    if((posisi_hapus<1)||(posisi_hapus>banyakdata))
-		    {
-		      cout<<"Belum ada data !! \n";
-		    }
-		    else
-			    {
-			      bantu=awal_node;
-			      poshapus=1;
-				      while(poshapus<(posisi_hapus-1))
-					      {
-					        bantu=bantu->next;
-					        poshapus++;
-					      }
-			      hapus=bantu->next;
-			      bantu->next=hapus->next;
-			      delete hapus;
-			    }
-		}
- 	else 
-    cout<<"Data Masih kosong, tidak bisa hapus data dari tengah! ";
-}
-	
-void banyakangka()
-{
-	cout<<"Masukkan banyak data :";
-}
-
-int main()
-{
-	int n,dat;
-  	awal_node = NULL;
-
-    cout << "# Menambah List Node Depan." << endl;
-    banyakangka();
-    cin >> n;
-	    for (int i = 0; i < n; i++)
-	    {
-			tambahdepan(dat);
-		}
-		print_node();
-
-	cout << "\n# Menambah List Node Belakang." << endl;
-	banyakangka();
-	cin >> n;
-	    for (int i = 0; i < n; i++)
-	    {
-			tambahbelakang(dat);
-		}
-		print_node();
-
-    cout << "\n# Menyisipkan List Node di posisi tertentu."<< endl;
-    banyakangka();
-	cin >> n;

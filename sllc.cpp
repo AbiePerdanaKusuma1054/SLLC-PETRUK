@@ -2,6 +2,7 @@
 //irham setyaki-1757051005
 
 #include <iostream> 
+#include <windows.h>
 
 using namespace std;
 

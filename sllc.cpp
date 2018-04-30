@@ -1,5 +1,6 @@
 //fauzi riski-1717051029
 //irham setyaki-1757051005
+//bonema tri prasetyo-1717051017
 
 #include <iostream> 
 #include <windows.h>
@@ -182,3 +183,34 @@ void hapustengah(int parameter)
     cout<<"Data Masih kosong, tidak bisa hapus data dari tengah! ";
 }
 	
+void banyakangka()
+{
+	cout<<"Masukkan banyak data :";
+}
+
+int main()
+{
+	int n,dat;
+  	awal_node = NULL;
+
+    cout << "# Menambah List Node Depan." << endl;
+    banyakangka();
+    cin >> n;
+	    for (int i = 0; i < n; i++)
+	    {
+			tambahdepan(dat);
+		}
+		print_node();
+
+	cout << "\n# Menambah List Node Belakang." << endl;
+	banyakangka();
+	cin >> n;
+	    for (int i = 0; i < n; i++)
+	    {
+			tambahbelakang(dat);
+		}
+		print_node();
+
+    cout << "\n# Menyisipkan List Node di posisi tertentu."<< endl;
+    banyakangka();
+	cin >> n;

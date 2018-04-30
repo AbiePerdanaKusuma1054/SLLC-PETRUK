@@ -25,7 +25,7 @@ void tambahdepan(int parameter)
   baru->next = NULL;	
   if(awal_node == NULL)	
 	  {
-	    awal_node=baru;		//f
+	    awal_node=baru;		
 	    awal_node->next = NULL;
 	  }
   else

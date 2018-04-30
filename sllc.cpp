@@ -1,6 +1,7 @@
 //fauzi riski-1717051029
 //irham setyaki-1757051005
 //bonema tri prasetyo-1717051017
+//Fikri Aulia-1717051047
 
 #include <iostream> 
 #include <windows.h>

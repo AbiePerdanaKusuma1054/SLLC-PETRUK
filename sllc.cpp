@@ -1,10 +1,10 @@
 //fauzi riski-1717051029
 //irham setyaki-1757051005
 //fikri aulia-1717051047
+//bonema tri prasetyo-1717051017
 
 #include <iostream> 
-#include <stdlib.h>
-#include <conio.h>
+#include <windows.h>
 using namespace std;
 
 class node 
